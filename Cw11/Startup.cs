@@ -1,4 +1,5 @@
 using Cw11.Models;
+using Cw11.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ namespace Cw11
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ClinicDbContext>(options => options.UseSqlServer(Configuration["dbConnectionString"]));
+            services.AddScoped<IDoctorDbService, SqlServerDoctorDbService>();
             services.AddControllers();
             services.AddSwaggerGen(config =>
                 config.SwaggerDoc("v1", new OpenApiInfo { Title = "Clinic API", Version = "v1" })
