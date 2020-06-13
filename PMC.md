@@ -9,6 +9,8 @@
 
 > PM> Add-Migration AddedPrescriptionMedicamentsTable
 
+> PM> Add-Migration AddedSeedData
+
 # Help methods
 - Peek generated migration SQL
     > PM> Script-Migration
