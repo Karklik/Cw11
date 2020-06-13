@@ -2,7 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>83ba21fa-536d-422d-aee9-73530c87e59c</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200612230714_AddedDoctorsTable.cs" />
+    <Compile Remove="Migrations\20200612230714_AddedDoctorsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200612232137_AddedPatientsTable.cs" />
+    <Compile Remove="Migrations\20200612232137_AddedPatientsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200612232931_AddedDoctorsTable.cs" />
+    <Compile Remove="Migrations\20200612232931_AddedDoctorsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200612233145_AddedPatientsTable.cs" />
+    <Compile Remove="Migrations\20200612233145_AddedPatientsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200612233611_AddedMedicamentsTable.cs" />
+    <Compile Remove="Migrations\20200612233611_AddedMedicamentsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200612235230_AddedPrescriptionsTable.cs" />
+    <Compile Remove="Migrations\20200612235230_AddedPrescriptionsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200613004104_AddedDoctorsTable.cs" />
+    <Compile Remove="Migrations\20200613004104_AddedDoctorsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200613004934_AddedPatientsTable.cs" />
+    <Compile Remove="Migrations\20200613004934_AddedPatientsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200613011720_AddedPrescriptionsTable.cs" />
+    <Compile Remove="Migrations\20200613011720_AddedPrescriptionsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200613012945_AddedPrescriptionMedicamentsTable.cs" />
+    <Compile Remove="Migrations\20200613012945_AddedPrescriptionMedicamentsTable.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
